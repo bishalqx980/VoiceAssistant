@@ -18,14 +18,14 @@ def speakJarvis(text):
         if text in [JARVIS_DATA.GREET]:
             # day time calculator
             hour = datetime.now().hour
-            if 6 <= hour <= 11:
+            if 0 <= hour <= 11:
                 daytime = "Morning"
             elif 12 <= hour <= 15:
                 daytime = "Noon"
-            elif 16 <= hour <= 18:
+            elif 16 <= hour <= 17:
+                daytime = "Afternoon"
+            elif 18 <= hour <= 23:
                 daytime = "Evening"
-            else: # between 19 - 5
-                daytime = "Night"
             
             text.append(f"Good {daytime} sir!")
         

@@ -24,7 +24,7 @@ def speakJarvis(text):
                 daytime = "Noon"
             elif 16 <= hour <= 18:
                 daytime = "Evening"
-            elif 19 <= hour <= 5:
+            else: # between 19 - 5
                 daytime = "Night"
             
             text.append(f"Good {daytime} sir!")

@@ -11,7 +11,7 @@ tts_engine = pyttsx3.init()
 
 # Optional
 tts_engine.setProperty('rate', 150)  # Speed of speech
-tts_engine.setProperty('volume', 0.9)  # Volume level (0.0 to 1.0)
+tts_engine.setProperty('volume', 1)  # Volume level (0.0 to 1.0)
 
 logger.info("""
 

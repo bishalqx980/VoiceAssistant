@@ -1,2 +1,18 @@
-# VoiceAssistant
-Voice Assistant: Inspired from IRON MAN ( J.A.R.V.I.S ) - Fun Project
+# VoiceAssistant (Alpha)
+Voice Assistant: Inspired from IRON MAN ( J.A.R.V.I.S )
+
+## How to run?
+    - Python 3.13 Required (TESTED)
+    - open cmd and run `pip install -r requirements.txt`
+    - finally `python -m assistant` to run
+
+## Credits
+```
+     ██╗    █████╗    ██████╗   ██╗   ██╗  ██╗   ███████╗
+     ██║   ██╔══██╗   ██╔══██╗  ██║   ██║  ██║   ██╔════╝
+     ██║   ███████║   ██████╔╝  ██║   ██║  ██║   ███████╗
+██   ██║   ██╔══██║   ██╔══██╗  ╚██╗ ██╔╝  ██║   ╚════██║
+╚█████╔╝██╗██║  ██║██╗██║  ██║██╗╚████╔╝██╗██║██╗███████║
+ ╚════╝ ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝ ╚═══╝ ╚═╝╚═╝╚═╝╚══════╝
+                                            by @bishalqx980
+```

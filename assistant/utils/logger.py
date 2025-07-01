@@ -8,7 +8,8 @@ def setup_logging():
         exit()
     
     # logging_format = "%(asctime)s - %(name)s - %(levelname)s - %(lineno)d - %(filename)s - %(message)s"
-    logging_format = "%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s"
+    # logging_format = "%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s"
+    logging_format = "%(message)s"
     logging_level = logging.INFO
 
     logging.basicConfig(
@@ -19,6 +20,7 @@ def setup_logging():
 
     logging.getLogger("httpx").setLevel(logging.WARNING) # To avoid all GET and POST requests being logged
     logging.getLogger('werkzeug').setLevel(logging.ERROR) # Disable Werkzeug logging
+    logging.getLogger('comtypes').setLevel(logging.WARNING) # Disabled comtype logging
 
     console = logging.StreamHandler()
     console.setLevel(logging_level)

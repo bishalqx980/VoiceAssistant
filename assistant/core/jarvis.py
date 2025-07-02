@@ -1,13 +1,20 @@
+import pyttsx3
 import random
 from datetime import datetime
-from assistant import logger, tts_engine
+from assistant import logger
+
+tts_engine = pyttsx3.init()
+
+# Optional
+tts_engine.setProperty('rate', 180)  # Speed of speech
+tts_engine.setProperty('volume', 1)  # Volume level (0.0 to 1.0)
 
 class JARVIS_DATA:
     GREET = []
-    BYE = ["See you sir!", "Have a good day sir!", "Bye sir!"]
-    THANKS = ["Always at your service sir!", "Ohh, don't thank me sir! It's my JOB sir!", "Appreciate it sir!"]
+    BYE = ["See you sir!", "Have a good day sir!", "Good Bye sir!"]
+    THANKS = ["Always at your service sir!", "It's my job sir!", "Appreciate it sir!"]
 
-    RESPONSE = ["Hi sir!", "I'm here sir!", "At your service sir!"]
+    RESPONSE = ["Hello sir!", "I'm here sir!", "At your service sir!"]
     NOFUNC = ["This function wasn't added sir!"]
 
 
@@ -46,10 +53,3 @@ def speakJarvis(text):
         tts_engine.runAndWait()
     except Exception as e:
         logger.error(e)
-
-        # Speak out if any error occured
-        try:
-            tts_engine.say(f"An error occured sir: {e}")
-            tts_engine.runAndWait()
-        except:
-            pass

@@ -1,4 +1,5 @@
 from datetime import datetime
+from assistant import logger
 from .jarvis import JARVIS_DATA, speakJarvis
 
 def process_text(text):
@@ -11,6 +12,8 @@ def process_text(text):
         if name in text: listento = name
 
     if not listento: return
+
+    logger.info(text.replace(listento, "Jarvis"))
 
     # Logics
     if any(i in text for i in ["hi", "hello"]):

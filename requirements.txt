@@ -1,3 +1,3 @@
-PyAudio~=0.2.14
+PyAudio==0.2.14
 SpeechRecognition==3.14.3
-pyttsx3~=2.98 # tts (offline)
+pyttsx3==2.98 # tts (offline)
